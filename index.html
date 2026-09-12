@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora Pixel Studios — Small Team. Big Worlds.</title>
+<meta name="description" content="Nexora Pixel Studios is an independent game development studio building unique 2D and multiplayer games. Featured game: Duo Trouble, a cooperative pixel-art platformer.">
+
+<meta property="og:title" content="Nexora Pixel Studios — Small Team. Big Worlds.">
+<meta property="og:description" content="Independent game development focused on experimental gameplay, pixel worlds and unforgettable challenges.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-cover.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="scroll-progress"></div>
+
+<div id="loader">
+  <div class="loader-px"><span></span><span></span><span></span><span></span></div>
+  <div class="loader-mark">NEXORA PIXEL STUDIOS</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="mark"></span>
+    NEXORA PIXEL
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="games.html">Games</a>
+    <a href="games/duo-trouble.html">Duo Trouble</a>
+    <a href="index.html#studio">About</a>
+    <a href="index.html#news">Updates</a>
+  </div>
+  <a class="nav-cta" href="games/duo-trouble.html">Play Now</a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">Home</a>
+  <a href="games.html">Games</a>
+  <a href="games/duo-trouble.html">Duo Trouble</a>
+  <a href="index.html#studio">About</a>
+  <a href="index.html#news">Updates</a>
+  <div class="mm-social">Instagram — @jai321k_</div>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <img class="floating-px" src="assets/px-coin.svg" style="width:34px; top:22%; left:8%;" alt="" aria-hidden="true">
+  <img class="floating-px" src="assets/px-gem.svg" style="width:28px; top:65%; left:12%;" alt="" aria-hidden="true">
+  <img class="floating-px" src="assets/px-gem.svg" style="width:22px; top:30%; right:10%;" alt="" aria-hidden="true">
+  <img class="floating-px" src="assets/px-coin.svg" style="width:24px; top:70%; right:14%;" alt="" aria-hidden="true">
+
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="dot"></span> Currently building Duo Trouble — In Development</div>
+    <h1 class="hero-title">NEXORA PIXEL<br><span class="line2">STUDIOS</span></h1>
+    <div class="hero-tagline">Small Team. Big Worlds.</div>
+    <p class="hero-desc">Independent game development focused on experimental gameplay, pixel worlds and unforgettable challenges.</p>
+    <div class="hero-actions">
+      <a href="games.html" class="btn btn-primary">Explore Games</a>
+      <a href="games/duo-trouble.html" class="btn btn-ghost">Play Duo Trouble</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue"><span>SCROLL</span><span class="stick"></span></div>
+</header>
+
+<!-- FEATURED GAME -->
+<section class="featured-game" id="featured">
+  <div class="section-inner fg-grid">
+    <div class="reveal">
+      <div class="fg-banner">
+        <div class="fg-banner-scene"></div>
+        <div class="fg-pixel-sprites">
+          <img class="px-char p1" src="assets/px-hero1.svg" alt="Duo Trouble player one pixel character">
+          <img class="px-char p2" src="assets/px-hero2.svg" alt="Duo Trouble player two pixel character">
+        </div>
+        <div class="fg-banner-badge"><span class="pulse"></span> In Development</div>
+        <div class="fg-banner-tags">
+          <span class="fg-tag">2D Platformer</span>
+          <span class="fg-tag">Co-op</span>
+          <span class="fg-tag">Online Play</span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="fg-kicker">Featured Game</div>
+      <h2 class="fg-title">DUO TROUBLE</h2>
+      <div class="fg-subtitle">Two Players. One Goal. Unlimited Trouble.</div>
+      <p class="fg-desc">Duo Trouble is a fast-paced 2D cooperative platforming adventure where two players must work together, overcome dangerous obstacles and survive unpredictable challenges.</p>
+      <div class="fg-pillrow">
+        <span class="fg-pill"><span class="ic">🎨</span> Pixel-Art Visual Style</span>
+        <span class="fg-pill"><span class="ic">👥</span> Multiplayer / Co-op</span>
+        <span class="fg-pill"><span class="ic">🕹️</span> Platformer</span>
+        <span class="fg-pill"><span class="ic">💀</span> Challenge-Based</span>
+        <span class="fg-pill"><span class="ic">🌐</span> Online Play</span>
+      </div>
+      <div class="fg-actions">
+        <a href="games/duo-trouble.html" class="btn-play-lg" id="playNowHome">
+          <span class="play-icon"></span> PLAY NOW
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAME INFO PANEL -->
+<section id="game-info">
+  <div class="section-inner reveal">
+    <div class="section-head">
+      <div class="section-kicker">Game Information</div>
+      <h2>Duo Trouble at a glance</h2>
+    </div>
+    <div class="info-panel">
+      <div class="info-cell"><div class="info-label">Genre</div><div class="info-value">2D Co-op Platformer</div></div>
+      <div class="info-cell"><div class="info-label">Players</div><div class="info-value">2 Players</div></div>
+      <div class="info-cell"><div class="info-label">Platform</div><div class="info-value">Web / Android</div></div>
+      <div class="info-cell"><div class="info-label">Engine</div><div class="info-value">Godot Engine</div></div>
+      <div class="info-cell"><div class="info-label">Mode</div><div class="info-value">Online Co-op</div></div>
+      <div class="info-cell"><div class="info-label">Status</div><div class="dev-badge"><span class="pulse"></span>In Development</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">Core Features</div>
+      <h2>Built for chaos, tuned for teamwork</h2>
+    </div>
+    <div class="features-grid reveal">
+      <div class="feature-card">
+        <span class="feature-icon">🎮</span>
+        <h3>Co-op Gameplay</h3>
+        <p>Work together and overcome obstacles.</p>
+        <div class="feature-more">No single player can finish this alone — every route needs two.</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Fast-Paced Action</h3>
+        <p>Quick reactions and precise movement matter.</p>
+        <div class="feature-more">Split-second timing separates a clean run from a restart.</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🧩</span>
+        <h3>Teamwork</h3>
+        <p>Some challenges require both players to cooperate.</p>
+        <div class="feature-more">Levers, boosts and switches only work when both players commit.</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💀</span>
+        <h3>Unexpected Traps</h3>
+        <p>Never assume the path is safe.</p>
+        <div class="feature-more">Floors, walls and shortcuts hide more than they reveal.</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🌐</span>
+        <h3>Online Multiplayer</h3>
+        <p>Play together from different locations.</p>
+        <div class="feature-more">Jump in with a friend from anywhere, no split-screen required.</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎨</span>
+        <h3>Pixel World</h3>
+        <p>A stylized 2D pixel-art environment.</p>
+        <div class="feature-more">Hand-tuned sprites and lighting built around a consistent palette.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAMEPLAY SHOWCASE -->
+<section id="showcase">
+  <div class="section-inner">
+    <h2 class="showcase-heading reveal">Every step can go wrong.</h2>
+    <div class="showcase-grid reveal">
+      <div class="showcase-card">
+        <div class="showcase-img"><span class="glyph">🤝</span></div>
+        <div class="showcase-body">
+          <h3>Co-op Challenges</h3>
+          <p>Coordinate your moves and survive together.</p>
+        </div>
+      </div>
+      <div class="showcase-card">
+        <div class="showcase-img"><span class="glyph">⚠️</span></div>
+        <div class="showcase-body">
+          <h3>Traps &amp; Obstacles</h3>
+          <p>Timing is everything.</p>
+        </div>
+      </div>
+      <div class="showcase-card">
+        <div class="showcase-img"><span class="glyph">❓</span></div>
+        <div class="showcase-body">
+          <h3>Unexpected Moments</h3>
+          <p>Because the easiest path is usually the most dangerous.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio">
+  <div class="section-inner studio-grid">
+    <div class="reveal studio-text">
+      <div class="section-kicker">About the Studio</div>
+      <h2 style="font-size:clamp(28px,3.6vw,40px); margin-bottom:20px;">Nexora Pixel Studios</h2>
+      <p>Nexora Pixel Studios is an independent game studio building original experiences with a focus on gameplay, experimentation and stylized visuals.</p>
+    </div>
+    <div class="reveal">
+      <div class="stats-grid">
+        <div class="stat-cell"><div class="stat-num">01+</div><div class="stat-label">Games in Development</div></div>
+        <div class="stat-cell"><div class="stat-num">02</div><div class="stat-label">Player Co-op Focus</div></div>
+        <div class="stat-cell"><div class="stat-num">100%</div><div class="stat-label">Indie</div></div>
+        <div class="stat-cell"><div class="stat-num">∞</div><div class="stat-label">Ideas</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">Development Roadmap</div>
+      <h2>From concept to release</h2>
+    </div>
+    <div class="roadmap reveal">
+      <div class="roadmap-track">
+        <div class="roadmap-line"><div class="roadmap-line-fill"></div></div>
+        <div class="phase done">
+          <div class="phase-dot"></div>
+          <div class="phase-tag">PHASE 01</div>
+          <h3>Concept</h3>
+          <p>Game concept and core mechanics.</p>
+        </div>
+        <div class="phase current">
+          <div class="phase-dot"></div>
+          <div class="phase-tag">PHASE 02</div>
+          <h3>Prototype</h3>
+          <p>Movement, multiplayer and gameplay systems.</p>
+          <div class="current-flag">CURRENT PHASE</div>
+        </div>
+        <div class="phase">
+          <div class="phase-dot"></div>
+          <div class="phase-tag">PHASE 03</div>
+          <h3>Content</h3>
+          <p>Levels, environments, characters and challenges.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-dot"></div>
+          <div class="phase-tag">PHASE 04</div>
+          <h3>Polish</h3>
+          <p>Visual effects, sound, UI and optimization.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-dot"></div>
+          <div class="phase-tag">PHASE 05</div>
+          <h3>Release</h3>
+          <p>Web and Android release.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS -->
+<section id="upcoming">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">Beyond Duo Trouble</div>
+      <h2>More worlds are coming</h2>
+      <p class="sub">Early-stage projects still taking shape. Nothing here is final.</p>
+    </div>
+    <div class="upcoming-grid reveal">
+      <div class="upcoming-card">
+        <div class="noise-veil"></div>
+        <span class="upcoming-soon">COMING SOON</span>
+        <span class="upcoming-glyph">◆</span>
+        <span class="upcoming-tag">Concept</span>
+        <h3>Project Neon</h3>
+        <div class="status">Status: Concept</div>
+      </div>
+      <div class="upcoming-card">
+        <div class="noise-veil"></div>
+        <span class="upcoming-soon">COMING SOON</span>
+        <span class="upcoming-glyph">▲</span>
+        <span class="upcoming-tag">Prototype</span>
+        <h3>Project Void</h3>
+        <div class="status">Status: Prototype</div>
+      </div>
+      <div class="upcoming-card classified">
+        <div class="noise-veil"></div>
+        <span class="upcoming-soon">COMING SOON</span>
+        <span class="upcoming-glyph">?</span>
+        <span class="upcoming-tag">Classified</span>
+        <h3>Project X</h3>
+        <div class="status">Status: Classified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">Development Log</div>
+      <h2>Latest updates</h2>
+    </div>
+    <div class="news-list reveal">
+      <div class="news-item">
+        <div class="news-date">Update 01</div>
+        <div>
+          <span class="news-tag">DUO TROUBLE — DEVELOPMENT UPDATE #01</span>
+          <h3>Core multiplayer systems are taking shape.</h3>
+          <p>Networking foundations and player synchronization are being built out ahead of the first playable prototype.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">Update 02</div>
+        <div>
+          <span class="news-tag">DUO TROUBLE — GAMEPLAY UPDATE</span>
+          <h3>New obstacles and cooperative mechanics are being tested.</h3>
+          <p>Early trap layouts and two-player puzzle triggers are in internal testing.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">Update 03</div>
+        <div>
+          <span class="news-tag">STUDIO UPDATE</span>
+          <h3>Nexora Pixel Studios is preparing its first major playable experience.</h3>
+          <p>The team is focused on turning Duo Trouble into a polished, shareable co-op prototype.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-inner reveal">
+    <div class="section-head">
+      <div class="section-kicker">Stay Connected</div>
+      <h2>Follow the development</h2>
+    </div>
+    <a class="ig-button" href="https://instagram.com/jai321k_" target="_blank" rel="noopener">
+      <span class="ig-glyph">IG</span> @jai321k_
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name"><span class="mark" style="width:20px;height:20px;background:linear-gradient(135deg,#4ee6d4,#7c5cff);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);"></span>NEXORA PIXEL STUDIOS</div>
+      <p>Small Team. Big Worlds.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="index.html#studio">About</a>
+        <a href="index.html#news">Updates</a>
+      </div>
+      <div class="footer-col">
+        <h4>Games</h4>
+        <a href="games/duo-trouble.html">Duo Trouble</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://instagram.com/jai321k_" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Nexora Pixel Studios. All rights reserved.</span>
+    <span>Built with Godot Engine</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

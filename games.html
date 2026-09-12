@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games — Nexora Pixel Studios</title>
+<meta name="description" content="Explore the games in development at Nexora Pixel Studios, including the cooperative pixel-art platformer Duo Trouble.">
+<meta property="og:title" content="Games — Nexora Pixel Studios">
+<meta property="og:description" content="Explore the games in development at Nexora Pixel Studios.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="scroll-progress"></div>
+<div id="loader">
+  <div class="loader-px"><span></span><span></span><span></span><span></span></div>
+  <div class="loader-mark">NEXORA PIXEL STUDIOS</div>
+  <div class="loader-bar"></div>
+</div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand"><span class="mark"></span> NEXORA PIXEL</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="games.html" class="active">Games</a>
+    <a href="games/duo-trouble.html">Duo Trouble</a>
+    <a href="index.html#studio">About</a>
+    <a href="index.html#news">Updates</a>
+  </div>
+  <a class="nav-cta" href="games/duo-trouble.html">Play Now</a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="games.html" class="active">Games</a>
+  <a href="games/duo-trouble.html">Duo Trouble</a>
+  <a href="index.html#studio">About</a>
+  <a href="index.html#news">Updates</a>
+  <div class="mm-social">Instagram — @jai321k_</div>
+</div>
+
+<section class="page-hero">
+  <div class="section-inner reveal">
+    <h1>Our Games</h1>
+    <p>Every world we're building, from active development to early concepts.</p>
+  </div>
+</section>
+
+<section style="padding-top:20px;">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">In Development</div>
+      <h2>Currently building</h2>
+    </div>
+    <div class="games-list-grid reveal">
+      <a href="games/duo-trouble.html" class="game-card">
+        <div class="thumb"><span class="glyph">🕹️</span></div>
+        <div class="body">
+          <span class="status-chip">In Development</span>
+          <h3 style="margin-top:14px;">Duo Trouble</h3>
+          <p>A fast-paced 2D cooperative platformer where two players must work together to survive unpredictable challenges.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-kicker">Beyond Duo Trouble</div>
+      <h2>More worlds are coming</h2>
+      <p class="sub">Early-stage projects still taking shape. Nothing here is final.</p>
+    </div>
+    <div class="upcoming-grid reveal">
+      <div class="upcoming-card">
+        <div class="noise-veil"></div>
+        <span class="upcoming-soon">COMING SOON</span>
+        <span class="upcoming-glyph">◆</span>
+        <span class="upcoming-tag">Concept</span>
+        <h3>Project Neon</h3>
+        <div class="status">Status: Concept</div>
+      </div>
+      <div class="upcoming-card">
+        <div class="noise-veil"></div>
+        <span class="upcoming-soon">COMING SOON</span>
+        <span class="upcoming-glyph">▲</span>
+        <span class="upcoming-tag">Prototype</span>
+        <h3>Project Void</h3>
+        <div class="status">Status: Prototype</div>
+      </div>
+      <div class="upcoming-card classified">
+        <div class="noise-veil"></div>
+        <span class="upcoming-soon">COMING SOON</span>
+        <span class="upcoming-glyph">?</span>
+        <span class="upcoming-tag">Classified</span>
+        <h3>Project X</h3>
+        <div class="status">Status: Classified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name"><span class="mark" style="width:20px;height:20px;background:linear-gradient(135deg,#4ee6d4,#7c5cff);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);"></span>NEXORA PIXEL STUDIOS</div>
+      <p>Small Team. Big Worlds.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="index.html#studio">About</a>
+        <a href="index.html#news">Updates</a>
+      </div>
+      <div class="footer-col">
+        <h4>Games</h4>
+        <a href="games/duo-trouble.html">Duo Trouble</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://instagram.com/jai321k_" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Nexora Pixel Studios. All rights reserved.</span>
+    <span>Built with Godot Engine</span>
+  </div>
+</footer>
+
+<script src="../main.js"></script>
+<script>document.getElementById('nav').querySelector('a.nav-brand').href='index.html';</script>
+</body>
+</html>
